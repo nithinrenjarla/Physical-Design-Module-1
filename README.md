@@ -123,3 +123,19 @@ DRC / LVS / Antenna Checks
     ↓
 Final Layout
 ```
+Each stage has a specific role in converting the synthesized design into a physically valid layout.
+
+# 1. Floorplanning
+Floorplanning is the first major stage of physical design. It defines the physical dimensions of the core and die and determines how the design will be organized inside the available area. The important floorplanning parameters include: FP_CORE_UTIL FP_ASPECT_RATIO FP_SIZING FP_IO_MODE FP_IO_HMETAL FP_IO_VMETAL FP_PDN_* These parameters control the core utilization, aspect ratio, I/O placement, metal layers, and power distribution network configuration. Floorplan Configuration The floorplan configuration is controlled using the OpenLane configuration and floorplan settings.
+
+
+#  2. Power Planning
+Power planning establishes the power distribution network (PDN) required to supply power to the standard cells.
+
+The PDN provides reliable connections for:
+
+- VDD 
+- VSS
+- Standard-cell power rails
+- Core power distribution
+ Proper power planning is important for reliable operation of the implemented design.
