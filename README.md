@@ -31,13 +31,14 @@ To understand the role of open-source EDA tools in ASIC implementation.
 
 To analyze the effect of different physical design configurations on the final implementation.
 
-Tools and Technologies
-|Tool / Technology|	Purpose|
-|OpenLane|	Automated ASIC implementation flow|
-SKY130 PDK	Target process technology
-OpenROAD	Physical design implementation
-Yosys	Logic synthesis
-OpenSTA	Static Timing Analysis
-Magic	Design Rule Checking
-Netgen	Layout Versus Schematic
-SPEF	Parasitic extraction and timing analysis
+# Tools and Technologies
+| Tool / Technology |	Purpose |
+|---|---|
+| OpenLane |	Automated ASIC implementation flow |
+| SKY130 PDK |	Target process technology |
+| OpenROAD |	Physical design implementation |
+| Yosys |	Logic synthesis |
+| OpenSTA |	Static Timing Analysis |
+| Magic |	Design Rule Checking |
+| Netgen |	Layout Versus Schematic |
+| SPEF |	Parasitic extraction and timing analysis |
