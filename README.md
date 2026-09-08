@@ -161,13 +161,13 @@ Clock Tree Synthesis (CTS) creates a clock distribution network for sequential e
 
 The main objectives of CTS are:
 
--Reduce clock skew.
+- Reduce clock skew.
 
--Control clock latency.
+- Control clock latency.
 
--Maintain acceptable clock transition.
+- Maintain acceptable clock transition.
 
--Distribute the clock signal reliably to sequential cells.
+- Distribute the clock signal reliably to sequential cells.
 
 Clock buffers and other cells may be inserted during CTS to achieve the required clock distribution.
 
@@ -218,18 +218,140 @@ Timing analysis is performed at different stages of the physical design flow, in
 
 The important timing parameters include:
 
--Setup time
+- Setup time
 
--Hold time
+- Hold time
 
--Clock latency
+- Clock latency
 
--Data arrival time
+- Data arrival time
 
--Data required time
+- Data required time
 
--Slack
+- Slack
 
 A positive timing slack generally indicates that the corresponding timing constraint is satisfied.
 
 
+# 9. Parasitic Extraction
+After routing, the physical interconnects introduce parasitic resistance and capacitance.
+
+These parasitic effects are extracted from the routed design and represented using a Standard Parasitic Exchange Format (SPEF) file.
+
+The extracted parasitic information is used during post-route timing analysis to obtain more realistic timing results.
+```text
+Routed Design
+     ↓
+Parasitic Extraction
+     ↓
+SPEF
+     ↓
+OpenSTA
+     ↓
+Post-route Timing Analysis
+```
+# 10. Logic Equivalence Check
+Logic Equivalence Check (LEC) is used to verify that modifications made during physical implementation have not changed the intended logical functionality.
+
+Physical design stages such as optimization and Clock Tree Synthesis can modify the netlist.
+
+LEC compares the reference design with the modified implementation to ensure functional equivalence.
+```text
+Reference Netlist
+       |
+       |  LEC
+       |
+Implemented Netlist
+       ↓
+Functional Equivalence
+```
+# 11. Physical Verification
+Physical verification ensures that the final layout satisfies manufacturing and connectivity requirements.
+
+The major verification checks performed are:
+
+# Design Rule Check (DRC)
+DRC verifies whether the layout follows the manufacturing rules of the SKY130 technology.
+
+It checks physical constraints such as:
+
+- Minimum metal width
+- Minimum spacing
+- Via rules
+- Layer-specific restrictions
+- Other geometry constraints
+- 
+# Layout Versus Schematic (LVS)
+LVS compares the extracted layout connectivity with the intended circuit netlist.
+
+A successful LVS indicates that the physical implementation represents the intended circuit correctly.
+
+
+
+# 12. OpenLane Design Exploration
+OpenLane supports design-space exploration by allowing different implementation parameters to be evaluated.
+
+Parameters such as core utilization, aspect ratio, and other floorplanning settings can affect the final implementation.
+
+The main metrics considered during exploration include:
+
+- Area
+- Cell count
+- Utilization
+- Timing
+- Routing congestion
+- Design-rule violations
+The results can be compared to select a suitable configuration for the design.
+
+
+# 13. OpenLane ASIC Flow
+OpenLane is an automated RTL-to-GDSII flow that integrates multiple open-source EDA tools into a unified ASIC implementation flow.
+
+It provides an automated sequence of synthesis, floorplanning, placement, CTS, routing, extraction, timing analysis, and physical verification.
+
+The flow is designed to simplify ASIC implementation and enable reproducible physical design experiments.
+
+
+# 14. OpenLane and OpenROAD
+OpenLane uses OpenROAD as the primary physical implementation engine for several stages of the ASIC flow.
+
+OpenROAD provides capabilities for:
+
+- Floorplanning
+- Power planning
+- Placement
+- Optimization
+- Clock Tree Synthesis
+- Routing
+- Physical implementation
+Other open-source tools are integrated with OpenLane to complete the overall flow.
+
+# 15. SKY130 PDK
+The project uses the SkyWater SKY130 Process Design Kit (PDK) as the target technology.
+
+The PDK provides the technology-specific information required by the ASIC implementation tools, including:
+
+- Standard-cell libraries
+- Technology LEF files
+- Liberty timing libraries
+- Design rules
+- Layer information
+- Physical abstracts
+These files allow the design to be synthesized, placed, routed, and verified according to the target semiconductor technology.
+
+
+# 16. OpenLane Design Configuration
+OpenLane uses configuration variables to control different stages of the physical design flow.
+
+The configuration file defines design-specific parameters and allows the implementation flow to be reproduced consistently.
+
+Important configuration categories include:
+
+- Design and source configuration
+- Clock configuration
+- Floorplan configuration
+- Placement configuration
+- Routing configuration
+- Timing constraints
+- Power planning parameters
+The configuration is selected according to the requirements of the design and the target technology.
