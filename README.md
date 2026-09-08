@@ -280,7 +280,7 @@ It checks physical constraints such as:
 - Via rules
 - Layer-specific restrictions
 - Other geometry constraints
-- 
+  
 # Layout Versus Schematic (LVS)
 LVS compares the extracted layout connectivity with the intended circuit netlist.
 
