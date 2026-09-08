@@ -45,12 +45,19 @@ To analyze the effect of different physical design configurations on the final i
 
 # Table of Contents
 1 - Floorplanning
+
 2 - Power Planning
+
 3 - Placement
+
 4 - Clock Tree Synthesis
+
 5 - Routing
+
 6 - Antenna Rule Checking
+
 7 - Antenna Violation Repair
+
 8 - Static Timing Analysis
 9 - Parasitic Extraction
 10 - Logic Equivalence Check
