@@ -102,7 +102,7 @@ To analyze the effect of different physical design configurations on the final i
 
 # Physical Design Flow
 The physical design process follows a sequence of implementation and verification stages:
-
+```text
 Synthesis
     ↓
 Floorplanning
@@ -122,3 +122,4 @@ Static Timing Analysis
 DRC / LVS / Antenna Checks
     ↓
 Final Layout
+```
