@@ -139,3 +139,30 @@ The PDN provides reliable connections for:
 - Standard-cell power rails
 - Core power distribution
  Proper power planning is important for reliable operation of the implemented design.
+
+
+# 3. Placement
+Placement determines the physical locations of the standard cells within the floorplan.
+
+The placement process generally consists of:
+
+# Global Placement
+Global placement distributes the cells while considering wirelength, timing, and congestion.
+
+# Placement Optimization
+The placement is optimized to improve timing and routing characteristics.
+
+# Detailed Placement
+Detailed placement legalizes the cell locations according to the physical constraints of the technology.
+
+
+# 4. Clock Tree Synthesis
+Clock Tree Synthesis (CTS) creates a clock distribution network for sequential elements in the design.
+
+The main objectives of CTS are:
+
+-Reduce clock skew.
+-Control clock latency.
+-Maintain acceptable clock transition.
+-Distribute the clock signal reliably to sequential cells.
+Clock buffers and other cells may be inserted during CTS to achieve the required clock distribution.
