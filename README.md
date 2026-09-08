@@ -95,5 +95,30 @@ To analyze the effect of different physical design configurations on the final i
 25 - Final Physical Design Flow
 
 26 - Terminal Execution and Command Evidence
+
 27 - Key Learnings
+
 28 - Conclusion
+
+# Physical Design Flow
+The physical design process follows a sequence of implementation and verification stages:
+
+Synthesis
+    ↓
+Floorplanning
+    ↓
+Power Planning
+    ↓
+Placement
+    ↓
+Clock Tree Synthesis
+    ↓
+Routing
+    ↓
+Parasitic Extraction
+    ↓
+Static Timing Analysis
+    ↓
+DRC / LVS / Antenna Checks
+    ↓
+Final Layout
