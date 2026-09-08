@@ -162,7 +162,74 @@ Clock Tree Synthesis (CTS) creates a clock distribution network for sequential e
 The main objectives of CTS are:
 
 -Reduce clock skew.
+
 -Control clock latency.
+
 -Maintain acceptable clock transition.
+
 -Distribute the clock signal reliably to sequential cells.
+
 Clock buffers and other cells may be inserted during CTS to achieve the required clock distribution.
+
+
+# 5. Routing
+Routing creates the physical metal connections between the placed standard cells.
+
+Routing is performed in two major stages:
+
+# Global Routing
+Global routing determines the approximate paths for the connections and evaluates routing congestion.
+
+# Detailed Routing
+Detailed routing creates the final physical connections while satisfying the design rules of the target technology.
+
+Successful routing is necessary for generating a valid physical layout.
+
+
+# 6. Antenna Rule Checking
+During the fabrication process, long metal connections can accumulate electrical charge. This can cause damage to the gate oxide of MOS transistors and is known as the antenna effect.
+
+Therefore, antenna violations are checked after routing.
+
+Antenna violations can be addressed using antenna diode cells. The diode provides a discharge path and helps protect the gate during fabrication.
+
+The OpenLane flow supports antenna checking and repair as part of the physical implementation process.
+
+
+# 7. Antenna Violation Repair
+When an antenna violation is identified, an antenna diode can be used to fix the violation.
+
+The general approach is:
+```text
+Antenna Violation
+       ↓
+Violation Detection
+       ↓
+Antenna Diode Insertion
+       ↓
+Routing / Optimization
+       ↓
+Antenna Re-check
+```
+# 8. Static Timing Analysis
+Static Timing Analysis (STA) is used to verify whether the implemented design satisfies its timing constraints.
+
+Timing analysis is performed at different stages of the physical design flow, including after synthesis and after routing.
+
+The important timing parameters include:
+
+-Setup time
+
+-Hold time
+
+-Clock latency
+
+-Data arrival time
+
+-Data required time
+
+-Slack
+
+A positive timing slack generally indicates that the corresponding timing constraint is satisfied.
+
+
