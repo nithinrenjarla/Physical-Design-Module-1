@@ -327,6 +327,7 @@ OpenLane is an automated RTL-to-GDSII flow that integrates multiple open-source 
 It provides an automated sequence of synthesis, floorplanning, placement, CTS, routing, extraction, timing analysis, and physical verification.
 
 The flow is designed to simplify ASIC implementation and enable reproducible physical design experiments.
+<img width="700" alt="Screenshot (182)" src="https://github.com/user-attachments/assets/513bf209-0e1c-4cc1-bf73-83fae3e26445" />
 
 
 # 14. OpenLane and OpenROAD
@@ -355,6 +356,7 @@ The PDK provides the technology-specific information required by the ASIC implem
 - Layer information
 - Physical abstracts
 These files allow the design to be synthesized, placed, routed, and verified according to the target semiconductor technology.
+<img width="700" alt="Screenshot (183)" src="https://github.com/user-attachments/assets/c4235302-d495-447c-991f-93ee1d995d42" />
 
 
 # 16. OpenLane Design Configuration
