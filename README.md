@@ -138,7 +138,7 @@ FP_IO_MODE FP_IO_HMETAL
 FP_IO_VMETAL FP_PDN_*
 
 These parameters control the core utilization, aspect ratio, I/O placement, metal layers, and power distribution network configuration. Floorplan Configuration The floorplan configuration is controlled using the OpenLane configuration and floorplan settings.
-<img width="700" alt="Screenshot (178)" src="https://github.com/user-attachments/assets/5fb4056b-4dfd-4c1a-aab5-0c273b7cfb40" />
+<img width="700" alt="Screenshot (187)" src="https://github.com/user-attachments/assets/29803410-9386-4071-be90-6dd60d369891" />
 
 
 #  2. Power Planning
@@ -199,7 +199,7 @@ Global routing determines the approximate paths for the connections and evaluate
 Detailed routing creates the final physical connections while satisfying the design rules of the target technology.
 
 Successful routing is necessary for generating a valid physical layout.
-<img width="700" alt="Screenshot 2026-09-09 224149" src="https://github.com/user-attachments/assets/341f788b-01a1-42ab-b774-c8383542a7be" />
+<img width="700" alt="Screenshot (180)" src="https://github.com/user-attachments/assets/de023bad-0cad-4743-9415-c8dcf3429a86" />
 
 
 # 6. Antenna Rule Checking
