@@ -413,9 +413,10 @@ The main operations include:
 - Clock Tree Synthesis
 - Routing
 - Physical optimization
+- 
 OpenLane automates these stages while using technology-specific constraints from the SKY130 PDK.
 
-20. Project Execution
+# 20. Project Execution
 The OpenLane flow was executed by providing the required RTL design, technology files, and configuration parameters.
 
 The flow was run through the OpenLane flow script, which automatically invokes the required tools for each stage of physical implementation.
@@ -423,3 +424,14 @@ The flow was run through the OpenLane flow script, which automatically invokes t
 The execution generates intermediate files, logs, reports, and final physical design outputs.
 
 A typical OpenLane run contains:
+```text
+Design
+ ├── src/
+ ├── config.tcl
+ └── runs/
+      └── <run_directory>/
+           ├── results/
+           ├── reports/
+           ├── logs/
+           └── tmp/
+```
