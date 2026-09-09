@@ -435,3 +435,21 @@ Design
            ├── logs/
            └── tmp/
 ```
+
+# 21. Physical Design Results
+After completing the physical implementation flow, the generated results and reports are analyzed to evaluate the quality of the design.
+
+The important implementation metrics include:
+
+| Metric | Purpose |
+|---|---|
+| Area | Measures the physical size of the implemented design |
+| Cell Count | Number of standard cells used |
+| Utilization | Percentage of the core occupied by cells |
+| Timing | Determines whether timing constraints are satisfied |
+| Slack | Indicates the available timing margin |
+| Routing | Confirms successful physical connectivity |
+| DRC | Checks manufacturing design rules |
+| LVS | Checks layout-to-netlist connectivity |
+| Antenna | Checks fabrication-related antenna violations |
+These metrics are used to evaluate the quality and correctness of the final physical implementation.
