@@ -210,6 +210,7 @@ Therefore, antenna violations are checked after routing.
 Antenna violations can be addressed using antenna diode cells. The diode provides a discharge path and helps protect the gate during fabrication.
 
 The OpenLane flow supports antenna checking and repair as part of the physical implementation process.
+<img width="700" alt="Screenshot (186)" src="https://github.com/user-attachments/assets/76545fe2-57ef-4521-83f5-672ae3294c13" />
 
 
 # 7. Antenna Violation Repair
@@ -247,6 +248,7 @@ The important timing parameters include:
 - Slack
 
 A positive timing slack generally indicates that the corresponding timing constraint is satisfied.
+<img width="700" alt="Screenshot (185)" src="https://github.com/user-attachments/assets/1ac4f71c-3e6a-4d50-9ba9-10f2e4ed8fcc" />
 
 
 # 9. Parasitic Extraction
@@ -319,6 +321,7 @@ The main metrics considered during exploration include:
 - Routing congestion
 - Design-rule violations
 The results can be compared to select a suitable configuration for the design.
+<img width="700" alt="Screenshot (184)" src="https://github.com/user-attachments/assets/5d4b7f32-2d4f-46a6-9df6-db6c746f3011" />
 
 
 # 13. OpenLane ASIC Flow
