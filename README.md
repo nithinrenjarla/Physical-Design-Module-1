@@ -138,8 +138,8 @@ FP_IO_MODE FP_IO_HMETAL
 FP_IO_VMETAL FP_PDN_*
 
 These parameters control the core utilization, aspect ratio, I/O placement, metal layers, and power distribution network configuration. Floorplan Configuration The floorplan configuration is controlled using the OpenLane configuration and floorplan settings.
+<img width="700" alt="Screenshot (178)" src="https://github.com/user-attachments/assets/5fb4056b-4dfd-4c1a-aab5-0c273b7cfb40" />
 
-<img width="700" alt="Screenshot 2026-09-09 223021" src="https://github.com/user-attachments/assets/df556f69-1749-4804-9ec0-c57b1bf4f5fa" />
 
 #  2. Power Planning
 Power planning establishes the power distribution network (PDN) required to supply power to the standard cells.
