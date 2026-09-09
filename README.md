@@ -128,7 +128,10 @@ Each stage has a specific role in converting the synthesized design into a physi
 
 # 1. Floorplanning
 Floorplanning is the first major stage of physical design. It defines the physical dimensions of the core and die and determines how the design will be organized inside the available area. The important floorplanning parameters
-include: FP_CORE_UTIL FP_ASPECT_RATIO FP_SIZING FP_IO_MODE FP_IO_HMETAL FP_IO_VMETAL FP_PDN_* 
+include: FP_CORE_UTIL 
+FP_ASPECT_RATIO FP_SIZING 
+FP_IO_MODE FP_IO_HMETAL
+FP_IO_VMETAL FP_PDN_* 
 These parameters control the core utilization, aspect ratio, I/O placement, metal layers, and power distribution network configuration. Floorplan Configuration The floorplan configuration is controlled using the OpenLane configuration and floorplan settings.
 
 <img width="1920" alt="Screenshot 2026-09-09 223021" src="https://github.com/user-attachments/assets/df556f69-1749-4804-9ec0-c57b1bf4f5fa" />
