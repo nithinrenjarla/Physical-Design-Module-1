@@ -302,6 +302,7 @@ LVS compares the extracted layout connectivity with the intended circuit netlist
 
 A successful LVS indicates that the physical implementation represents the intended circuit correctly.
 
+<img width="700" alt="Screenshot (181)" src="https://github.com/user-attachments/assets/34a4c7ef-1c67-45d5-94c9-ebca0be338ca" />
 
 
 # 12. OpenLane Design Exploration
