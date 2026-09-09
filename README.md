@@ -377,3 +377,18 @@ Important configuration categories include:
 - Timing constraints
 - Power planning parameters
 The configuration is selected according to the requirements of the design and the target technology.
+
+# 17. Floorplan Configuration Parameters
+The floorplan can be controlled using OpenLane environment variables.
+
+Some important parameters used for floorplanning are:
+
+| Parameter | Description |
+|---|---|
+| `FP_CORE_UTIL` | Controls the target core utilization |
+| `FP_ASPECT_RATIO` | Defines the core aspect ratio |
+| `FP_SIZING` | Controls floorplan sizing mode |
+| `FP_IO_MODE` | Defines I/O placement mode |
+| `FP_IO_HMETAL` | Defines horizontal I/O metal layer |
+| `FP_IO_VMETAL` | Defines vertical I/O metal layer |
+| `FP_PDN_*` | Controls power distribution network settings |
