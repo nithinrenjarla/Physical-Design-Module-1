@@ -452,4 +452,33 @@ The important implementation metrics include:
 | DRC | Checks manufacturing design rules |
 | LVS | Checks layout-to-netlist connectivity |
 | Antenna | Checks fabrication-related antenna violations |
+
 These metrics are used to evaluate the quality and correctness of the final physical implementation.
+
+# 22. Verification Summary
+The implemented design is evaluated through multiple verification stages.
+
+| Verification | Objective |
+|---|---|
+| STA | Verify timing constraints |
+| LEC | Verify logical equivalence |
+| DRC | Verify physical design rules |
+| LVS | Verify layout connectivity |
+| Antenna Check | Identify antenna rule violations |
+
+These checks help ensure that the final physical implementation is logically correct, physically valid, and suitable for further ASIC sign-off activities.
+
+# 23. Design Space Exploration
+Different physical design configurations can produce different implementation results.
+
+OpenLane provides design exploration capabilities to study the effect of configuration parameters on:
+
+- Area
+- Utilization
+- Timing
+- Cell density
+- Routing congestion
+- Overall implementation quality
+For example, changing the core utilization or aspect ratio can influence placement density and routing congestion.
+
+The exploration process helps in selecting a configuration that provides a suitable balance between area, timing, and routability.
