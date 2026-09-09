@@ -167,6 +167,7 @@ The placement is optimized to improve timing and routing characteristics.
 
 # Detailed Placement
 Detailed placement legalizes the cell locations according to the physical constraints of the technology.
+<img width="700" alt="Screenshot 2026-09-09 224018" src="https://github.com/user-attachments/assets/dc47e268-e60c-4818-99d4-7e92a94471bd" />
 
 
 # 4. Clock Tree Synthesis
@@ -183,6 +184,7 @@ The main objectives of CTS are:
 - Distribute the clock signal reliably to sequential cells.
 
 Clock buffers and other cells may be inserted during CTS to achieve the required clock distribution.
+<img width="700" alt="Screenshot 2026-09-09 224149" src="https://github.com/user-attachments/assets/b0aebc34-b22f-4b8e-86a7-e377714357f3" />
 
 
 # 5. Routing
@@ -197,6 +199,7 @@ Global routing determines the approximate paths for the connections and evaluate
 Detailed routing creates the final physical connections while satisfying the design rules of the target technology.
 
 Successful routing is necessary for generating a valid physical layout.
+<img width="700" alt="Screenshot 2026-09-09 224149" src="https://github.com/user-attachments/assets/341f788b-01a1-42ab-b774-c8383542a7be" />
 
 
 # 6. Antenna Rule Checking
