@@ -482,3 +482,60 @@ OpenLane provides design exploration capabilities to study the effect of configu
 For example, changing the core utilization or aspect ratio can influence placement density and routing congestion.
 
 The exploration process helps in selecting a configuration that provides a suitable balance between area, timing, and routability.
+
+<img width="700" alt="Screenshot (189)" src="https://github.com/user-attachments/assets/1d6db6c5-b173-4423-b6cd-d802a0873d58" />
+
+# 24. OpenLane Regression Testing
+Regression testing is used to verify that changes in the flow, tools, or configuration do not introduce unexpected failures.
+
+OpenLane provides a regression testing mechanism for evaluating designs across different flow configurations.
+
+This helps improve the reliability and reproducibility of the ASIC implementation flow.
+
+<img width="700" alt="Screenshot (188)" src="https://github.com/user-attachments/assets/2a1bbdbe-e937-4190-97df-0b5eb1762150" />
+
+# 25. Final Physical Design Flow
+
+The complete physical design process studied in this project can be summarized as:
+```text
+             RTL Design
+                  |
+                  ↓
+              Synthesis
+                  |
+                  ↓
+            Floorplanning
+                  |
+                  ↓
+           Power Planning
+                  |
+                  ↓
+              Placement
+                  |
+                  ↓
+                 CTS
+                  |
+                  ↓
+               Routing
+                  |
+                  ↓
+        Parasitic Extraction
+                  |
+                  ↓
+                 STA
+                  |
+                  ↓
+          Antenna Checking
+                  |
+                  ↓
+             DRC / LVS
+                  |
+                  ↓
+          Final Layout / GDSII
+```
+
+# 26. Terminal Execution and Command Evidence
+
+The following terminal screenshots provide evidence of the commands executed during the physical design setup and OpenLane flow.
+
+# 26.1 PDK Directory and Library Setup
