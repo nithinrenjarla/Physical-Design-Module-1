@@ -392,3 +392,34 @@ Some important parameters used for floorplanning are:
 | `FP_IO_HMETAL` | Defines horizontal I/O metal layer |
 | `FP_IO_VMETAL` | Defines vertical I/O metal layer |
 | `FP_PDN_*` | Controls power distribution network settings |
+Proper selection of these parameters affects the available area, placement density, congestion, and routability of the design.
+
+# 18. Design for Test (DFT)
+Design for Testability (DFT) techniques improve the ability to test and diagnose an integrated circuit after fabrication.
+
+Scan-based testing is commonly used to provide controllability and observability of internal sequential elements.
+
+DFT is considered as part of the ASIC implementation flow before final verification.
+
+
+# 19. Physical Implementation
+The physical implementation stage integrates the major physical design operations required to transform the synthesized design into a routed layout.
+
+The main operations include:
+
+- Floorplanning
+- Power planning
+- Placement
+- Clock Tree Synthesis
+- Routing
+- Physical optimization
+OpenLane automates these stages while using technology-specific constraints from the SKY130 PDK.
+
+20. Project Execution
+The OpenLane flow was executed by providing the required RTL design, technology files, and configuration parameters.
+
+The flow was run through the OpenLane flow script, which automatically invokes the required tools for each stage of physical implementation.
+
+The execution generates intermediate files, logs, reports, and final physical design outputs.
+
+A typical OpenLane run contains:
