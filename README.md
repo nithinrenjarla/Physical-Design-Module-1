@@ -540,3 +540,7 @@ The following terminal screenshots provide evidence of the commands executed dur
 # 26.1 PDK Directory and Library Setup
 
 <img width="700" alt="library" src="https://github.com/user-attachments/assets/7f7015c5-eb06-42dd-8c5c-07d2bb988a66" />
+
+# 26.2 OpenLane Environment Setup
+
+<img width="700" alt="openlane" src="https://github.com/user-attachments/assets/49b3f338-74bd-4679-aa70-1f523ec9be3f" />
