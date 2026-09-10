@@ -561,3 +561,13 @@ The following terminal screenshots provide evidence of the commands executed dur
 
 
 # 27. Conclusion
+
+This project provided practical exposure to the ASIC Physical Design flow using OpenLane and the SKY130 PDK.
+
+The major physical design stages, from floorplanning to final verification, were studied and implemented using open-source EDA tools.
+
+The project demonstrated the importance of proper floorplanning, placement, clock distribution, routing, timing analysis, and physical verification in achieving a reliable ASIC implementation.
+
+The study also showed that physical design parameters have a direct impact on important design metrics such as area, timing, utilization, and routability.
+
+Overall, the project provided a practical understanding of the complete ASIC physical implementation methodology and the role of open-source tools in modern VLSI design.
