@@ -543,4 +543,21 @@ The following terminal screenshots provide evidence of the commands executed dur
 
 # 26.2 OpenLane Environment Setup
 
-<img width="700" alt="openlane" src="https://github.com/user-attachments/assets/49b3f338-74bd-4679-aa70-1f523ec9be3f" />
+<img width="700" alt="openlane" src="https://github.com/user-attachments/assets/c0b59713-5af8-44ae-ae79-669d19455ec9" />
+
+# 26.3 Sky130 Standard Cell Library Verification
+
+
+# 26.4 LEF and Library File Verification
+
+
+# 26.5 OpenLane Flow Execution
+
+
+# 26.6 OpenLane Configuration
+
+
+# 26.7 Floorplan Configuration
+
+
+# 27. Conclusion
