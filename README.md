@@ -1,4 +1,3 @@
-
 # Physical-Design-Module-1
 # Complete ASIC Physical Design Flow Using OpenLane and SKY130
 
@@ -539,3 +538,5 @@ The complete physical design process studied in this project can be summarized a
 The following terminal screenshots provide evidence of the commands executed during the physical design setup and OpenLane flow.
 
 # 26.1 PDK Directory and Library Setup
+
+<img width="700" alt="library" src="https://github.com/user-attachments/assets/7f7015c5-eb06-42dd-8c5c-07d2bb988a66" />
