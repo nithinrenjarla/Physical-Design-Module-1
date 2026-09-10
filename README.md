@@ -1,4 +1,4 @@
-# Physical-Design-Module-1
+<img width="958" height="907" alt="WhatsApp Image 2026-09-10 at 8 06 43 PM" src="https://github.com/user-attachments/assets/3b3f2586-eced-46c7-9619-3a4610c34ea8" /># Physical-Design-Module-1
 # Complete ASIC Physical Design Flow Using OpenLane and SKY130
 
 # Project Overview
@@ -551,12 +551,15 @@ The following terminal screenshots provide evidence of the commands executed dur
 
 # 26.4 OpenLane Flow Execution
 
+<img width="700" alt="flow execution" src="https://github.com/user-attachments/assets/03e9eeb3-570f-4301-9ec5-c81d8a4bdf80" />
 
-# 26.5 OpenLane Configuration
+# 26.5 OpenLane Configuration 
 
+<img width="700" alt="configuration" src="https://github.com/user-attachments/assets/91c75a16-d417-44d1-b447-cdd4f2e3543a" />
 
 # 26.6 Floorplan Configuration
 
+<img width="700" alt="floorplan" src="https://github.com/user-attachments/assets/b395a7cf-4792-4629-8384-5521ec0444a6" />
 
 # 27. Conclusion
 
