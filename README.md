@@ -1,4 +1,4 @@
-<img width="958" height="907" alt="WhatsApp Image 2026-09-10 at 8 06 43 PM" src="https://github.com/user-attachments/assets/3b3f2586-eced-46c7-9619-3a4610c34ea8" /># Physical-Design-Module-1
+ # Physical-Design-Module-1
 # Complete ASIC Physical Design Flow Using OpenLane and SKY130
 
 # Project Overview
